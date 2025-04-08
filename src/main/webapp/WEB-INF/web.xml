@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+        http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+    <display-name>Application WEB affichant HelloWorld</display-name>
+
+    <servlet>
+        <servlet-name>EtatsServlet</servlet-name>
+        <servlet-class>Etats</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EtatsServlet</servlet-name>
+        <url-pattern>/Etats.html</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>formdepServlet</servlet-name>
+        <servlet-class>formdep</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>formdepServlet</servlet-name>
+        <url-pattern>/formdep.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>formpreviServlet</servlet-name>
+        <servlet-class>formprevi</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>formpreviServlet</servlet-name>
+        <url-pattern>/formprevi.html</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SenderServlet</servlet-name>
+        <servlet-class>Sender</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SenderServlet</servlet-name>
+        <url-pattern>/Sender.html</url-pattern>
+    </servlet-mapping>
+
+</web-app>
